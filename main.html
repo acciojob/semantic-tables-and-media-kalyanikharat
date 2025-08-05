@@ -1,53 +1,72 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+// Semantic Tables and Media
 
-  <table border="1" cellspacing="0" cellpadding="2">
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	<!-- Semantic Table -->
+  <table border="1">
     <thead>
       <tr>
-        <th>Roll number</th>
+        <th>Roll Number</th>
         <th>Name</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>Kalyani</td>
+        <td>101</td>
+        <td>Alice</td>
       </tr>
       <tr>
-        <td>2</td>
-        <td>Sami</td>
+        <td>102</td>
+        <td>Bob</td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>Pushky</td>
+        <td>103</td>
+        <td>Charlie</td>
       </tr>
     </tbody>
   </table>
 
+  <!-- Heading between table and list -->
   <h2>List of medias</h2>
 
+  <!-- Ordered List of Media Items -->
   <ol>
-    <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Sample image from Picsum">
-    </li>
-    <li>
-      <video width="320" height="240" controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </li>
-    <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-  </ol>
+  <!-- First item: Image -->
+  <li>
+    <img src="https://picsum.photos/id/123/200/300" alt="Random Image from Picsum">
+  </li>
 
-  <script type="text/javascript" src="./script.js"></script>
+  <!-- Second item: Video with <source> -->
+  <li>
+    <video width="320" height="240" controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </li>
+
+  <!-- Third item: Audio with BOTH src on <audio> and <source> -->
+  <li>
+    <audio 
+      src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
+      controls>
+      <source 
+        src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
+        type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </li>
+</ol>
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
